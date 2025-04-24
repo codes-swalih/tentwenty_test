@@ -2,12 +2,12 @@ import Banner1 from "./images/BannerImages/Banner1.jpeg";
 import Banner2 from "./images/BannerImages/Banner2.jpeg";
 import Banner3 from "./images/BannerImages/Banner3.png";
 
-import Product1 from "./images/ProductsImages/Product1.png";
+import Product1 from "./images/ProductsImages/product1.png";
 
-import Product5 from "./images/ProductsImages/Product5.png";
-import Product6 from "./images/ProductsImages/Product6.png";
-import Product7 from "./images/ProductsImages/Product7.png";
-import Product8 from "./images/ProductsImages/Product8.png";
+import Product5 from "./images/ProductsImages/product5.png";
+import Product6 from "./images/ProductsImages/product6.png";
+import Product7 from "./images/ProductsImages/product7.png";
+import Product8 from "./images/ProductsImages/product8.png";
 
 
 
