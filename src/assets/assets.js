@@ -1,6 +1,6 @@
-import Banner1 from "./images/BannerImages/Banner1.jpeg";
-import Banner2 from "./images/BannerImages/Banner2.jpeg";
-import Banner3 from "./images/BannerImages/Banner3.png";
+import Banner1 from "./images/BannerImages/banner1.jpeg";
+import Banner2 from "./images/BannerImages/banner2.jpeg";
+import Banner3 from "./images/BannerImages/banner3.png";
 
 import Product1 from "./images/ProductsImages/product1.png";
 
