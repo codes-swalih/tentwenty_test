@@ -227,7 +227,7 @@ const ProductsSlider: React.FC = () => {
             duration: 0.3,
             ease: "easeInOut",
           }}
-          className="text-[1.5rem] -mt-16 z-10 lg:text-[2.25rem]"
+          className="text-[1.5rem] xl:-mt-16 z-10 lg:text-[2.25rem]"
         >
           {productsDetails[textIndex].client}
         </motion.h3>
