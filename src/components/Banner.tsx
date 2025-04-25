@@ -115,8 +115,8 @@ function Banner() {
                   onClick={handleNextClick}
                   className="flex relative items-center justify-center w-full h-full mx-auto my-auto"
                 >
-                  <div className="w-32 md:w-[41%] -ml-[225px] md:-ml-[198.5px] sm:-ml-[198.5px] relative my-auto h-32 sm:h-full flex items-center justify-center border-[0.5px] border-gray-500">
-                    <div className="relative my-auto w-[68%] h-[68%]">
+                  <div className="w-40 md:w-[41%] -ml-[224px] md:-ml-[198.5px] sm:-ml-[198.5px] relative my-auto h-40 sm:h-full flex items-center justify-center border-[0.5px] border-gray-500">
+                    <div className="relative my-auto ml-2 md:ml-0  w-[68%] h-[68%]">
                       {[
                         { index: sliderImageIndex - 1 < 0 ? bannerImages.length - 1 : sliderImageIndex - 1, initial: true },
                         { index: sliderImageIndex, initial: firstRender.current }
