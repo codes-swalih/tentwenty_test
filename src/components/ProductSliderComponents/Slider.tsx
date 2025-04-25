@@ -157,7 +157,7 @@ const ProductsSlider: React.FC = () => {
       {/* SLIDES */}
       <div className="w-full h-auto overflow-hidden">
         <div
-          className="flex cursor-grab justify-center py-[2rem] lg:py-[5rem] gap-10 lg:gap-[10rem] overflow-hidden"
+          className="flex cursor-grab xl:h-[109vh] 2xl:h-[89vh] justify-center py-[2rem] lg:py-[5rem] gap-10 lg:gap-[10rem] overflow-hidden"
           ref={slidersContainerRef}
           onMouseDown={handleDragStart}
           onMouseMove={dragState.isDragging ? handleDragMove : undefined}
@@ -168,18 +168,46 @@ const ProductsSlider: React.FC = () => {
           onTouchEnd={dragState.isDragging ? handleDragEnd : undefined}
         >
           {productsDetails.map((product, index) => (
+          <div>
             <motion.div
-              className="w-[14.5rem] lg:w-[27.1rem] h-[20.7rem] lg:h-[38.7rem] flex-shrink-0 z-10"
+              className=" hidden 2xl:block w-[14.5rem] lg:w-[27.1rem] h-[20.7rem] lg:h-[38.7rem] bg-black flex-shrink-0 z-10"
               animate={{
-                translateX: motionState.xConstant * (isLargeScreen ? 3.7 : 6.8) * motionState.distance,
-                rotate: motionState.constants[index] * (isLargeScreen ? 10 : 8),
-                translateY: Math.abs(motionState.constants[index]) * (isLargeScreen ? 50 : 20),
+                translateX: motionState.xConstant * (isLargeScreen ? 1.6 : 1) * motionState.distance,
+                rotate: motionState.constants[index] * (isLargeScreen ? 15 : 30),
+                translateY: Math.abs(motionState.constants[index]) * (isLargeScreen ? 110 : 5),
               }}
               transition={{ duration: 0.8, ease: easeInOut }}
               key={index}
             >
               <Image className="w-full h-full object-cover" src={product.image} alt={product.client} />
             </motion.div>
+
+            <motion.div
+              className=" hidden xl:block 2xl:hidden  w-[14.5rem] lg:w-[27.1rem] h-[20.7rem] lg:h-[38.7rem] bg-black flex-shrink-0 z-10"
+              animate={{
+                translateX: motionState.xConstant * (isLargeScreen ? 2.1 : 2) * motionState.distance,
+                rotate: motionState.constants[index] * (isLargeScreen ? 15 : 30),
+                translateY: Math.abs(motionState.constants[index]) * (isLargeScreen ? 110 : 5),
+              }}
+              transition={{ duration: 0.8, ease: easeInOut }}
+              key={index}
+            >
+              <Image className="w-full h-full object-cover" src={product.image} alt={product.client} />
+            </motion.div>
+
+            <motion.div
+              className=" block md:hidden  w-[14.5rem] lg:w-[27.1rem] h-[20.7rem] lg:h-[38.7rem] bg-black flex-shrink-0 z-10"
+              animate={{
+                translateX: motionState.xConstant * (isLargeScreen ? 3.7 : 3.3) * motionState.distance,
+                rotate: motionState.constants[index] * (isLargeScreen ? 90 : 8),
+                translateY: Math.abs(motionState.constants[index]) * (isLargeScreen ? 80 : 25),
+              }}
+              transition={{ duration: 0.8, ease: easeInOut }}
+              key={index}
+            >
+              <Image className="w-full h-full object-cover" src={product.image} alt={product.client} />
+            </motion.div>
+          </div>
           ))}
         </div>
       </div>
