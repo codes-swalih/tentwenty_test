@@ -17,7 +17,7 @@ function Title() {
         <motion.p 
           className="text-productsTitle px-8 lg:px-0 text-[1rem] lg:text-[1.5rem] leading-[1.15rem] lg:leading-[1.75rem] mt-8"
           initial={{ x: -30, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1,  }}
           transition={{ duration: 0.6, ease: 'backIn', delay: 0.2 }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

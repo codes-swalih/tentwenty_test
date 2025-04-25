@@ -185,7 +185,7 @@ const ProductsSlider: React.FC = () => {
             <motion.div
               className=" hidden xl:block 2xl:hidden  w-[14.5rem] lg:w-[27.1rem] h-[20.7rem] lg:h-[38.7rem] bg-black flex-shrink-0 z-10"
               animate={{
-                translateX: motionState.xConstant * (isLargeScreen ? 2.1 : 2) * motionState.distance,
+                translateX: motionState.xConstant * (isLargeScreen ? 2.08 : 2) * motionState.distance,
                 rotate: motionState.constants[index] * (isLargeScreen ? 15 : 30),
                 translateY: Math.abs(motionState.constants[index]) * (isLargeScreen ? 110 : 5),
               }}
@@ -218,7 +218,7 @@ const ProductsSlider: React.FC = () => {
       </div>
 
       {/* TEXT */}
-      <div className="absolute bottom-10 left-0 w-full text-center z-20">
+      <div className="absolute  left-0 w-full text-center z-20">
         <motion.h3
           key={textIndex}
           initial={{ y: 15, opacity: 0 }}
@@ -227,7 +227,7 @@ const ProductsSlider: React.FC = () => {
             duration: 0.3,
             ease: "easeInOut",
           }}
-          className="text-[1.5rem] z-10 lg:text-[2.25rem]"
+          className="text-[1.5rem] -mt-16 z-10 lg:text-[2.25rem]"
         >
           {productsDetails[textIndex].client}
         </motion.h3>
