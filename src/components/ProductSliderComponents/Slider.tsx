@@ -172,7 +172,7 @@ const ProductsSlider: React.FC = () => {
             <motion.div
               className=" hidden 2xl:block w-[14.5rem] lg:w-[27.1rem] h-[20.7rem] lg:h-[38.7rem] bg-black flex-shrink-0 z-10"
               animate={{
-                translateX: motionState.xConstant * (isLargeScreen ? 1.6 : 1) * motionState.distance,
+                translateX: motionState.xConstant * (isLargeScreen ? 1.56 : 1) * motionState.distance,
                 rotate: motionState.constants[index] * (isLargeScreen ? 15 : 30),
                 translateY: Math.abs(motionState.constants[index]) * (isLargeScreen ? 110 : 5),
               }}

@@ -2,7 +2,7 @@ import React from 'react';
 import { ProgressBarProps } from '@/types/banner';
 
 const ProgressBar: React.FC<ProgressBarProps> = ({ progress, getProgressStyle }) => (
-  <div className="w-full h-full cursor-pointer relative  ">
+  <div className="w-full h-full cursor-pointer relative z-10 ">
     {[0, 25, 50, 75].map((start, index) => (
       <div
         key={start}

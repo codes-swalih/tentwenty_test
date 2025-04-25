@@ -16,12 +16,12 @@ const SliderImage: React.FC<SliderImageProps> = ({ index, initial, src }) => (
           src={src}
           alt="Banner image of nature,farms,beaches"
           fill
-          className="object-cover"
+          className="object-cover h-full w-full"
           priority
         />
       </motion.div>
     </div>
-    <div className="w-full h-full flex items-center justify-start ml-5 md:ml-8">
+    <div className="w-full h-full flex items-center justify-start ml-8 md:ml-8">
       <p className="absolute text-[#EEF4F9] font-bold text-[1rem]">
         Next
       </p>
